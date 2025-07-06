@@ -7,12 +7,19 @@ set "outputFolder=%parent_dir%\output"
 set "fixFolder=%parent_dir%\fix"
 set "resultFolder=%parent_dir%\result"
 
-rd /s /q "%resultFolder%"
+if exist "%resultFolder%" (
+    rd /s /q "%resultFolder%"
+)
 
-md "%outputFolder%"
-md "%fixFolder%"
-md "%resultFolder%"
-
+if not exist "%outputFolder%" (
+    md "%outputFolder%"
+)
+if not exist "%fixFolder%" (
+    md "%fixFolder%"
+)
+if not exist "%resultFolder%" (
+    md "%resultFolder%"
+)
 
 set /p "newname=Warship Part Name(e.g. FSB031_Flandre_1952_Bow):"
 

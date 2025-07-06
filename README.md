@@ -6,6 +6,6 @@ This tool is compatible with «Мир кораблей» forum [article](https:/
 This tool aims to simplify the export file section in Step 4.
 
 ## How to use it:
-1. Export your model files to `input` folder from Blender (or other softwares);
+1. Export your model files to `input` folder (if not exist, create one) from Blender (or other softwares);
 2. Run `export.bat` and input your new name of the warship part;
 3. Wait until it has finished, then you can get all transformed files in `result` folder.
